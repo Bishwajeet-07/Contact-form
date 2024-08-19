@@ -1,0 +1,140 @@
+:root {
+    --Green200: hsl(148, 38%, 91%);
+    --Green600: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Grey500: hsl(186, 15%, 59%);
+    --Grey900: hsl(187, 24%, 22%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Green200);
+}
+.container{
+    max-width: 1440px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.form-data{
+    padding: 2rem;
+    margin: auto;
+    background-color: var(--White);
+
+}
+.first-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.input-data {
+    width: 100%;
+    margin-right: 1rem;
+}
+.input-data input{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+.email-input{
+    margin-top: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.email-input input{
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.second-input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.radio-data{
+    border: 2px solid var(--Grey500);
+    border-radius: 10px;
+    padding: 1rem;
+    padding-right: 6rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-data:hover{
+    border-color: var(--Green600);
+    background-color: var(--Green200);
+}
+
+.radio-data input[type=radio]{
+    accent-color: var(--Green600);
+}
+.msg{
+    margin-top: 1rem;
+}
+.msg textarea{
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--Grey500);
+    padding: 5px;
+}
+textarea:focus{
+    outline: none;
+    border-color: var(--Green600);
+}
+.check{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.check input{
+    margin-right: 10px;
+}
+.check input[type=checkbox]{
+    accent-color: var(--Green600) !important;
+}
+
+.btn{
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--Green600);
+    color: white;
+    cursor: pointer;
+}
+
+.err{
+    display: none;
+    color: var(--Red);
+}
+span{
+    color: var(--Red);
+}
+
+input{
+    border: 2px solid var(--Grey500);
+    border-radius: 10px;
+}
+input:hover{
+    border: 2px solid var(--Green600);
+}
+input:focus{
+    outline: none;
+    border-color: var(--Green600);
+}
